@@ -11,12 +11,12 @@ def base_convert(i, b):
             result.insert(0, i % b)
             i = i // b
     return result
-wr=open('ouverture_5.txt','w')
+wr=open('ouverture_6.txt','w')
 for fl in L:
     Res=[]
-    l=5
+    l=6
     name=f'ms_{l}.txt'
-    f=open(name)
+    f=open(name,'r',encoding = "ISO-8859-1")
     W=[]
     for ligne in f.readlines():
         ligne=ligne.strip()
@@ -28,8 +28,8 @@ for fl in L:
         s=0
         n=0
         for k in range (4**(l-1)):
-            name=f'm{l}m.txt'
-            f=open(name)
+            name=f'm_{l}.txt'
+            f=open(name,'r',encoding = "ISO-8859-1")
             M=[]
             for ligne in f.readlines():
                 ligne=ligne.strip()
